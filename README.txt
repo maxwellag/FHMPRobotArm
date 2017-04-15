@@ -10,7 +10,7 @@ If you are reading this, you have already downloaded the code folder and should 
 	GrabFromVicon.py".
 	Note that the program will not move the arm unless it receives the UDP coordinates, so the companion device (Vicon computer) 
 	must be also running.
-	#####################################################
+#####################################################
 	
 ####################File Descriptions####################
 AngleFinder.py
