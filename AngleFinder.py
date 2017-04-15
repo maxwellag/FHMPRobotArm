@@ -4,6 +4,7 @@ import math
 
 
 class AngleFinder:
+#The constants below can be found in the constants.py file.
     segment1 = ARM_1_LENGTH
     segment2 = ARM_2_LENGTH
     maxDistance = segment1+segment2

@@ -16,7 +16,7 @@ import time
 import re
 import subprocess
 
-
+#This moves the arm to the X, Y, Z coordinates
 def moveArm(x, y, z):
     finder = AngleFinder()
     arm = ArmMovement.ArmControl()
@@ -41,6 +41,7 @@ def moveArm(x, y, z):
     arm.close()
     return True;
 
+#This resets the arm back to the neutral position
 def resetPosition():
     finder = AngleFinder()
     arm = ArmMovement.ArmControl()
@@ -63,11 +64,14 @@ def resetPosition():
     arm.setAngle(CONST_GRIPPER_CHANNEL,0)
     arm.close()
 
+#This opens the arm's gripper and releaseses the object
 def dropObject():
     finder = AngleFinder()
     arm = ArmMovement.ArmControl()
     
     print 'DROPPING'
+	
+	#These can be changed later depending on where you want to drop the object.
     x = 0.0
     z = 12.00
     y = 7.0
@@ -101,6 +105,7 @@ data, addr = sock.recvfrom(1024)
 arr = data.decode().split(',')
 y=float(arr[1])/10.0
 x=float(arr[0])/10.0
+#The -7 below is to adjust for the height of the arm, since it the base is not level with the ground.
 z=float(arr[2])/10.0-7.0
 print 'x: ' + str(x)
 print 'y: ' + str(y)
