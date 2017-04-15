@@ -95,6 +95,7 @@ y = 0
 '''
 UDP_IP = "192.168.1.103"
 '''
+#UDP port may need to be changed depending on what you are using. Make sure that both the sending device and receiving device are on the same wireless network.
 UDP_PORT = 5005
 sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 sock.bind(('', UDP_PORT))
