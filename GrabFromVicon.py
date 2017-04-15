@@ -1,10 +1,6 @@
 # -*- coding: utf-8 -*-
-#Base is off
-#Joint 1 works ok
-#Joint 2 is mostly corect
-#Joint 3 is off
-#Arm is working based on inputing coordinates, AngleFinder file is being used
-# to calculate the angle
+#Base has limited range of about 170 degrees.
+
 
 
 import ArmMovement
