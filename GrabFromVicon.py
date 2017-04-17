@@ -1,8 +1,6 @@
 # -*- coding: utf-8 -*-
 #Base has limited range of about 170 degrees.
 
-
-
 import ArmMovement
 from Constants import *
 import math

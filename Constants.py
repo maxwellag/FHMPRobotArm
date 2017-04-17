@@ -1,5 +1,5 @@
-#   There isn't a way to create true constants in Python, so please don't modify these in other classes
-#   Again: DO NOT MODIFY THESE VARIABLES
+#   There isn't a way to create true constants in Python, so please don't modify these in other classes (only call them)
+#   Again: DO NOT MODIFY THESE VARIABLES UNLESS YOU ARE CALIBRATING THE ARM (see the instructions)
 
 #   Base constants:
 CONST_BASE_CHANNEL = 1
@@ -7,13 +7,13 @@ CONST_BASE_OFFSET = 0
 CONST_BASE_ANGLE_START = 160
 CONST_BASE_MIN_PWM = 1200
 CONST_BASE_MAX_PWM = 9200
-CONST_BASE_MAX_ANGLE = 180 # changed from 180
+CONST_BASE_MAX_ANGLE = 180
 CONST_BASE_SPEED = 10
 
 
 #   Joint 1 constants:
 CONST_JOINT_1_CHANNEL = 2
-CONST_JOINT_1_OFFSET = 20 - 98
+CONST_JOINT_1_OFFSET = -78
 CONST_JOINT_1_ANGLE_START = 30
 CONST_JOINT_1_MIN_PWM = 2700
 CONST_JOINT_1_MAX_PWM = 5900
