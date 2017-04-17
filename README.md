@@ -25,7 +25,8 @@ Maestro.py
 GrabFromVicon.py
 	This is the main program that is run to move the arm to the given position. It calls the other helper files to combine several 
 	functions. This can be modified to fit different applications (ex: repeated movement or specific tasks after grabbing an object).
-	
+Calibration.py
+	This is a simple program used to calibrate the arm. Change these angles to make sure that each arm joint moves to the correct 		angle.
 	
 Note: .pyc files are not important and can be ignored (but they are necessary for the program to function). Don't delete them.
 	
